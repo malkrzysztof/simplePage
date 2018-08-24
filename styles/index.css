@@ -94,6 +94,7 @@ h3 {
 }
 
 ul {
+  position: sticky;
   display: flex;
   list-style-type: none;
   letter-spacing: 5px;
@@ -119,6 +120,11 @@ li {
 li:hover {
   letter-spacing: 2px;
   color: #021e69;
+}
+
+.navbar {
+    position: sticky;
+    margin-bottom: 0px; 
 }
 
 /*====================================================================ABOUT*/
