@@ -213,6 +213,10 @@ box-shadow: 9px 7px 3px 3px rgba(0,0,0,0.63);
   li {
       width: 24%; 
   }
+
+  #card1 {
+  z-index: -1;
+  }
 }
 
 
@@ -237,4 +241,7 @@ box-shadow: 9px 7px 3px 3px rgba(0,0,0,0.63);
       width: 24%; 
   }
 
+  #card1 {
+    z-index: -1;
+  }
 }
