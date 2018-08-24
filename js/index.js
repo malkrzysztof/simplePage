@@ -1,27 +1,26 @@
-$("#about").on('click', function(){
-	$("#about").addClass("clicked")
-	$("#services, #clients, #contact").removeClass("clicked")
-	$("#aboutContainer").removeClass("d-none").addClass("active")
-	$("#servicesContainer, #clientsContainer, #contactContainer").removeClass("active").addClass("d-none")
-});
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: "ul", offset: 50});   
 
-$("#services").on('click', function(){
-	$("#services").addClass("clicked")
-	$("#about, #clients, #contact").removeClass("clicked")
-	$("#servicesContainer").removeClass("d-none").addClass("active")
-	$("#aboutContainer, #clientsContainer, #contactContainer").removeClass("active").addClass("d-none")
-});
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-$("#clients").on('click', function(){
-	$("#clients").addClass("clicked")
-	$("#about, #services, #contact").removeClass("clicked")
-	$("#clientsContainer").removeClass("d-none").addClass("active")
-	$("#servicesContainer, #aboutContainer, #contactContainer").removeClass("active").addClass("d-none")	
-});
+      // Store hash
+      var hash = this.hash;
 
-$("#contact").on('click', function(){
-	$("#contact").addClass("clicked")
-	$("#about, #services, #clients").removeClass("clicked")
-	$("#contactContainer").removeClass("d-none").addClass("active")
-	$("#clientsContainer, #servicesContainer, #aboutContainer").removeClass("active").addClass("d-none")
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
 });
