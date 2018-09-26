@@ -130,7 +130,7 @@ li:hover {
 
 #aboutContainer {
   display: flex;
-  height: 500px;
+  height: auto;
   width: 100%;
   flex-direction: column;
 }
@@ -142,13 +142,8 @@ li:hover {
   align-self: center;
   color: black;
   font-size: 2vh;
-  animation: fadein 3s;
 }
 
-@keyframes fadein {
-  from { opacity: 0}
-  to   { opacity: 1}
-}
 
 .aboutPhoto {
   height: 140px;
@@ -181,7 +176,9 @@ li:hover {
   -moz-box-shadow: 9px 11px 22px 5px rgba(0,0,0,0.63);
   box-shadow: 9px 11px 22px 5px rgba(0,0,0,0.63);
   transition: 0.3s;
+  transition: opacity 3s;
 }
+
 
 .card1:hover {
 transform: scale(0.99);
