@@ -94,7 +94,6 @@ h3 {
 }
 
 ul {
-  position: sticky;
   display: flex;
   list-style-type: none;
   letter-spacing: 5px;
@@ -131,7 +130,7 @@ li:hover {
 
 #aboutContainer {
   display: flex;
-  height: auto;
+  height: 500px;
   width: 100%;
   flex-direction: column;
 }
@@ -142,6 +141,13 @@ li:hover {
   text-align: center;
   align-self: center;
   color: black;
+  font-size: 2vh;
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+  from { opacity: 0}
+  to   { opacity: 1}
 }
 
 .aboutPhoto {
@@ -159,7 +165,7 @@ li:hover {
 
 #servicesContainer {
   display: flex;
-  height: 700px;
+  height: auto;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 3% auto;
@@ -198,7 +204,7 @@ box-shadow: 9px 7px 3px 3px rgba(0,0,0,0.63);
 
 /*====================================================================CLIENTS*/
 #clientsContainer {
-  height: 500px;
+  height: 800px;
   display: flex;
   color: black;
 }
