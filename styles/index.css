@@ -315,6 +315,7 @@ box-shadow: 9px 7px 3px 3px rgba(0,0,0,0.63);
     width: 100%;
     font-size: 25px;
     letter-spacing: 25px;
+    margin-top: 1%;
   }
 
   ul {
@@ -367,7 +368,7 @@ box-shadow: 9px 7px 3px 3px rgba(0,0,0,0.63);
   }
 
   [data-aos] {
-    transition: none;
+    transform: none;
   }
 
 
