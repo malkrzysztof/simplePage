@@ -222,7 +222,7 @@ box-shadow: 9px 7px 3px 3px rgba(0,0,0,0.63);
 /*====================================================================CONTACT*/
 
 #contactContainer {
-  height: auto;
+  height: 350px;
   display: flex;
   margin: 3% auto;
   align-content: center;
@@ -296,7 +296,7 @@ box-shadow: 9px 7px 3px 3px rgba(0,0,0,0.63);
     position: relative;
     min-height: 0px;
     margin-bottom: 0px;
-    z-index: 5;
+    z-index: 9;
   }
 
   #header {
@@ -325,10 +325,12 @@ box-shadow: 9px 7px 3px 3px rgba(0,0,0,0.63);
 
   #aboutContainer {
     padding-top: 8%
+    z-index:-5;
   }
 
   #servicesContainer {
     padding-top: 20%;
+    z-index: -5;
   }
 
   .card1 {
@@ -339,13 +341,17 @@ box-shadow: 9px 7px 3px 3px rgba(0,0,0,0.63);
     z-index: -5;
   }
 
+  .card {
+    z-index: -5;
+  }
+
   #clientsContainer {
     padding-top: 20%
+    padding-bottom: 0%;
   }
 
   #contactContainer {
-    padding-top: 15%;
-    height: 700px;
+    height: 390px;
   }
 }
 
