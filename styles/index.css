@@ -172,7 +172,6 @@ li:hover {
   height: auto;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 3% auto;
   padding-top: 5%;
 }
 
@@ -369,7 +368,6 @@ box-shadow: 9px 7px 3px 3px rgba(0,0,0,0.63);
 
   [data-aos] {
     transition: none;
-    transform: none;
   }
 
 
